@@ -2,6 +2,7 @@ FROM python:3.9.1
 
 RUN apt update && apt upgrade -y
 RUN apt install git -y
+RUN git clone https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 COPY requirements.txt /requirements.txt
 
 RUN cd /
