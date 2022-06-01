@@ -1,26 +1,29 @@
 import wikipedia
-from pyrogram import Client,filters
-from plugins.shazam.function.pluginhelpers import edit_or_reply
-from plugins.shazam.function.basic_helpers import get_text
+from pyrogram import Client, filters
 
-
-@Client.on_message(filters.command(["wiki", "Wikipedia"]))
-async def wikipediasearch(Client, message):
-    event = await edit_or_reply(message, "`Searching..`")
-    query = get_text(message)
+@Client.on_message(filters.command('hand'))
+async def wiki_pedia(Client, message):
+    await message.edit("Processing ...")
+    query = message.filtered_input_str
+    flags = message.flags
+    limit = int(flags.get('-l', 5))
+    if message.reply_to_message:
+        query = message.reply_to_message.text
     if not query:
-        await event.edit("Invalid Syntax see help menu to know how to use this command")
+        await message.err(text="Give a query or reply to a message to wikipedia!")
         return
-    results = wikipedia.search(query)
-    result = ""
-    for s in results:
-        try:
-            page = wikipedia.page(s)
-            url = page.url
-            result += f"> [{s}]({url}) \n"
-        except BaseException:
-            pass
-    await event.edit(
-        "WikiPedia Search: {} \n\n Result: \n\n{}".format(query, result),
-        disable_web_page_preview=True,
-    )
+    try:
+        wikipedia.set_lang("en")
+        results = wikipedia.search(query)
+    except Exception as e:
+        await message.err(e)
+        return
+    output = ""
+    for i, s in enumerate(results, start=1):
+        page = wikipedia.page(s)
+        url = page.url
+        output += f"🌏 [{s}]({url})\n"
+        if i == limit:
+            break
+    output = f"**Wikipedia Search:**\n`{query}`\n\n**Results:**\n{output}"
+    await message.edit_or_send_as_file(text=output, caption=query,
