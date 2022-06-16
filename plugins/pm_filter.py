@@ -2198,7 +2198,7 @@ async def auto_filter(client, msg, spoll=False):
                 reply_to_message_id=message.message_id
             )
     else:
-        fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_to_message_id=reply_id, reply_markup=InlineKeyboardMarkup(btn))
+        fuk = await message.reply_photo(photo="https://telegra.ph/file/8b42f6caf6ef5fd76766f.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         await asyncio.sleep(900)
         await fuk.delete()
         await client.send_photo(
