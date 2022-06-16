@@ -1,6 +1,6 @@
 # 𝐓𝐈𝐆𝐄𝐑 𝐒𝐇𝐑𝐎𝐅𝐅
-Very Sempil Bot Auto Filter bot
-##[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+TigerShroff!;created+by+༒Crazyboss卂乃卄丨丂卄乇Ҝ༒;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
+Very Advance Auto Filter bot
+[Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=welcome+To+TigerShroff!;created+by+༒Crazyboss卂乃卄丨丂卄乇Ҝ༒;A+simple+autofilter+Bot!;Auto+filter+with+double+button!;start+message+with+pic!;and+all+futures!)
 </p>
 # 𝐂𝐋𝐈𝐂𝐊 𝐁𝐄𝐋𝐎𝐖 𝐈𝐌𝐀𝐆𝐄 𝐓𝐎 𝐃𝐄𝐏𝐋𝐎𝐘👇👇👇
 
