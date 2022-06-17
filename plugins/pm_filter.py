@@ -2170,7 +2170,7 @@ async def auto_filter(client, msg, spoll=False):
             await hehe.delete()
             await client.send_photo(
                 chat_id=message.chat.id,
-                photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
+                photo="https://telegra.ph/file/d8f821b86321bd9e3e135.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Cʟᴏꜱᴇᴅ 🗑️",
                 reply_to_message_id=message.message_id
             )
@@ -2182,7 +2182,7 @@ async def auto_filter(client, msg, spoll=False):
             await hmm.delete()
             await client.send_photo(
                 chat_id=message.chat.id,
-                photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
+                photo="https://telegra.ph/file/d8f821b86321bd9e3e135.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Cʟᴏꜱᴇᴅ 🗑️",
                 reply_to_message_id=message.message_id
             )
@@ -2193,7 +2193,7 @@ async def auto_filter(client, msg, spoll=False):
             await fek.delete()
             await client.send_photo(
                 chat_id=message.chat.id,
-                photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
+                photo="https://telegra.ph/file/d8f821b86321bd9e3e135.jpg",
                 caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Cʟᴏꜱᴇᴅ 🗑️",
                 reply_to_message_id=message.message_id
             )
@@ -2203,7 +2203,7 @@ async def auto_filter(client, msg, spoll=False):
         await fuk.delete()
         await client.send_photo(
             chat_id=message.chat.id,
-            photo="https://te.legra.ph/file/89c9ae7307f0c34dec77c.jpg",
+            photo="https://telegra.ph/file/d8f821b86321bd9e3e135.jpg",
             caption=f"⚙️ Fɪʟᴛᴇʀ Fᴏʀ <code>{search}</code> Cʟᴏꜱᴇᴅ 🗑️",
             reply_to_message_id=message.message_id
         )
